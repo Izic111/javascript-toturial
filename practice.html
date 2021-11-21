@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">HELLO WORD</h1>
+    <input type="text" id="inp">
+    <button onclick="runam()">click</button>
+
+    <script>
+        function runam(){
+            var text =document.getElementById("inp").value
+        if (text === "blue"){
+            document.getElementById("header").style.color="blue"
+        }else if ( text=== "pink"){
+            document.getElementById("header").style.color="pink"
+        
+        }else if ( text === "green"){
+            document.getElementById("header").style.color="green"
+        }else{
+            document.getElementById("header").style.color="red"
+
+        }
+
+    }
+
+    </script>
+</body>
+</html>

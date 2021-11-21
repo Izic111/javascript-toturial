@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>AGE CHECK</h1>
+    <input type="text" id="inp">
+    <button onclick="pressed()">CHECK</button>
+    <P id="output"></P>
+    <script>
+        function pressed(){
+            var text = parseInt (document.getElementById("inp").value);
+            var output = document.getElementById("output")
+            if (text == ""){
+                output.innerHTML="input your age"
+            }else if (text == 18){
+                output.innerHTML= "you are a teenager"
+
+            }else if (text > 18){
+                output.innerHTML="you are an addult"
+
+            }else if (text <18){
+                output.innerHTML="you are a child"
+            }else if (text <0){
+                output.innerHTML="invalid Age"
+            }//else{
+
+            //}
+
+        }
+    </script>
+</body>
+</html>

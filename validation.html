@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"> 
+    <input type="text" placeholder="Username" id="fullname"  required>
+    <input type="text" placeholder="Emailaddress" id="email">
+    <input type="tel" placeholder="Phone number" id="phone">
+    <input type="password" placeholder="Password" id="password">
+    <input type="password" placeholder="Confirmpassword" id="confirmpassword">
+    <p id="header"></p>
+    <button onclick="validation()">SUBMIT</button>
+</div>
+
+    <SCript>
+        function validation (){
+        var fullname = document.getElementById("fullname").value
+        var email= document.getElementById("email").value
+        var phone = document.getElementById("phone").value
+        var password = document.getElementById("password").value
+        var confirmpassword= document.getElementById("confirmpassword").value
+
+        if ( fullname=="" || email=="" || phone== "" || password== "" || confirmpassword=="" ){
+            document.getElementById("header").innerHTML="All input are required"
+        }
+        else if ((!email.match(/\S+@\S+\.\S+/)) || email.length>50) {
+            document.getElementById("header").innerHTML="not a valid email address"
+        }
+        else if (fullname.match((/^[A-Za-z]+$/)) || fullname.length>50){
+            document.getElementById("header").innerHTML="input your fullname" 
+        }
+        else if (phone.match(/^\d{10}$/) || phone ){
+            document.getElementById("header").innerHTML="input a valid pnone number" 
+        } 
+        else if ( password.length <=5 || confirmpassword.length<5){
+            document.getElementById("header").innerHTML="password should not be less than 5 digit"   
+        }
+        else if (password  !== confirmpassword){
+            document.getElementById ( "header").innerHTML="password mismatch"          
+        }
+        else{
+            document.getElementById("header").innerHTML="regisration succesful"
+        }
+
+    }
+
+        
+    </SCript>
+</body>
+</html>

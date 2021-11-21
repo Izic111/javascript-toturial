@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="header"> 
+    <h1 id="header">THE WORD IS LIGHT</h1>
+    <input type="text"  id="inp">
+    <button onclick="checker()">SUBMIT</button>
+   
+    <script>
+        function checker(){
+            var text = document.getElementById("inp").value
+            switch (text) {
+                case "red":
+                document.getElementById("header").style.color="red"
+                break;
+
+                case "blue":
+                    document.getElementById("header").style.color="blue"
+                    break;
+
+                    case "green":
+                    document.getElementById("header").style.color="green"
+                    break;
+
+                    case "gold":
+                    document.getElementById("header").style.color="gold"
+                    break;
+
+                    
+            }
+
+               
+    }
+
+        
+
+    </script>
+</body>
+</html>

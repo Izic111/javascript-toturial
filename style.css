@@ -1,0 +1,28 @@
+body{
+    background-color: darkolivegreen;
+    padding: auto;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.fist{
+    text-align: right;
+    background-color: rgb(101, 160, 12);
+}
+.fist ul{
+    list-style: none;
+}
+.fist li{
+    padding: 20px;
+    display: inline-block;
+}
+.fist a{
+    text-decoration: none;
+    color: khaki;
+
+}
+.fist a :hover{
+    color: blueviolet;
+    transition: 0ms;
+    font-size: 20px;
+    font-style: italic;
+}
